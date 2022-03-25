@@ -71,8 +71,10 @@ namespace MBusterClone
         public void SetMoney(MoneyType moneyType)
         {
             this.moneyType = moneyType;
-            uvRenderer.material = GameManager.Instance.GetMaterial(this.moneyType, out Material moneyMaterial);
+            GameManager.Instance.GetMaterial(this.moneyType, out Material moneyMaterial,out Material doodleMat, out Material uvMat);          
             moneyRenderer.material = moneyMaterial;
+            doodleRenderer.material = doodleMat;
+            uvRenderer.material = uvMat;
         }
         #endregion
 

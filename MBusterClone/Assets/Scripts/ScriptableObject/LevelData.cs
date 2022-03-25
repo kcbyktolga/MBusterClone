@@ -14,4 +14,8 @@ namespace MBusterClone
     {
         public MoneyType type;
     }
+    
+    /* 
+     Oyundaki bütün seviye mekaniklerinin nasýl olduðunu ön görmediðim içn geçici olarak seviyeler için böyle basit bir þablon kullandým. Bu þablon ilerki bölümler için geniþletilebilir ve Game Manager vasýstasý ile bölümler seviye indeksine göre ayarlanabilir. Not: Bu þablon ilk üç seviye için çalýþýr.
+    */
 }

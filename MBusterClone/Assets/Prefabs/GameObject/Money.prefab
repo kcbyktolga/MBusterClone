@@ -190,8 +190,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3976898187424067857}
+  startPos: {x: 0, y: 0, z: 0}
+  isSelect: 0
   gm: {fileID: 0}
+  "u\u0131Manager": {fileID: 0}
   moneyType: 0
+  shredTag: Shred
+  stackTag: Stack
+  stackOffset: {x: 0, y: 0, z: 0}
+  shredOffset: {x: 0, y: 0, z: 0}
   moneyRenderer: {fileID: 3658533376729052056}
   uvRenderer: {fileID: 6826388891162443389}
   doodleRenderer: {fileID: 6446674966902651709}
@@ -335,7 +342,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 33fbc153a2b4545ba89ee457b0c5df0f, type: 2}
+  - {fileID: 2100000, guid: ec86453b60b854cca823ad81809a80d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

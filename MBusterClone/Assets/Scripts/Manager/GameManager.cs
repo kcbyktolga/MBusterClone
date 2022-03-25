@@ -76,7 +76,7 @@ namespace MBusterClone
         /// <param name="type"></param>
         /// <param name="money"></param>
         /// <returns></returns>
-        public Material GetMaterial(MoneyType type, out Material money)
+        public void GetMaterial(MoneyType type, out Material money,out Material doodle, out Material uv)
         {
             money = moneyMat;
 
@@ -84,11 +84,17 @@ namespace MBusterClone
             {
                 default:
                 case MoneyType.Reel:
-                    return uvReel;
+                    doodle = moneyMat;
+                    uv = uvReel;
+                    break;
                 case MoneyType.Fake:
-                    return uvFake;
+                    doodle = moneyMat;
+                    uv = uvFake;
+                    break;
                 case MoneyType.Doodle:
-                    return doodle;
+                    uv = uvReel;
+                    doodle = this.doodle;
+                    break;             
             }
         }
 
